@@ -1,5 +1,6 @@
 package com.qingtian.shiro_demo;
 
+import org.apache.shiro.web.filter.mgt.DefaultFilter;
 import org.apache.shiro.web.servlet.AdviceFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,6 +20,7 @@ public class App
 {
 	TomcatEmbeddedServletContainer ss;
 	EmbeddedServletContainerFactory ssss;
+	DefaultFilter df;
     public static void main( String[] args )
     {
 		ConfigurableApplicationContext context = SpringApplication.run(App.class, args);

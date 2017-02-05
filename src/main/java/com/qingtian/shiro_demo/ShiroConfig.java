@@ -63,7 +63,6 @@ public class ShiroConfig {
 		Clients clients = new Clients(config.getOauthCallback(),qqClient,weiXinClient,sinaWeiboClient);
 		return clients;
 	}
-	
 	@Bean(name="memoryCacheManager")
 	public MemoryConstrainedCacheManager getMemoryCacheManager() {
 		return new MemoryConstrainedCacheManager();
