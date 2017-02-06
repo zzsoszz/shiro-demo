@@ -25,7 +25,7 @@ import com.zrk.oauthclient.shiro.support.UsernamePasswordAndClientToken;
  * @date 2016年11月21日 下午3:59:21
  */
 public class ShiroDbAndClientRealm extends UsernamePasswordAndClientRealm{
-
+	
 	@Autowired
 	private CustomerRepository customerRepository;
 	
@@ -47,7 +47,7 @@ public class ShiroDbAndClientRealm extends UsernamePasswordAndClientRealm{
 			 throw new UnknownAccountException(); //用户不存在
 		}
 	}
-
+	
 	//第三方登录认证数据再处理
 	@Override
 	protected AuthenticationInfo internalClientGetAuthenticationInfo( CommonProfile profile, Credentials credentials) {
